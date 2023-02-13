@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@font-face {
+    font-family: "norse";
+    src: url("Norse-Bold.otf");
+}
+
+
+
+#fern {
+    display: block; /* fixes extra 4px default gap */
+    object-fit: cover;
+    width: 33.3333vw;
+    height: 100vh;
+}
+
+.stripe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20vh;
+    width: 33.3333vw;
+    height: 16.6667vh;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#logo {
+    width: 5vw;
+    
+}
+
+#odin {
+    font-family: "norse";
+    font-size: 5vw;
+    color: white;
+}
+
+#credit {
+    text-align: center;
+    position: absolute;
+    bottom: 2vh;
+    width: 33.3333vw;
+    font-size: 1vw;
+    color: white;
+    
+
+}
+
+a, a:visited {
+    color: white;
+}
