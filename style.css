@@ -9,7 +9,9 @@
     src: url("Norse-Bold.otf");
 }
 
-
+body {
+    display: flex;
+}
 
 #fern {
     display: block; /* fixes extra 4px default gap */
@@ -25,7 +27,7 @@
     position: absolute;
     top: 20vh;
     width: 33.3333vw;
-    height: 16.6667vh;
+    height: 16.666vh;
     background-color: rgba(0,0,0,0.5);
 }
 
@@ -45,12 +47,114 @@
     position: absolute;
     bottom: 2vh;
     width: 33.3333vw;
-    font-size: 1vw;
+    font-size: 16px;
     color: white;
     
 
 }
 
-a, a:visited {
+.left-side > a, 
+.left-side > div > a:visited {
     color: white;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#top, 
+#bottom {
+    background-color: #E5E7EB;
+    width: 66.6667vw;
+    height: 36.6666vh;
+}
+
+#top > div:first-child {
+    position: absolute;
+    top: 16vh;
+    padding-left: 3vw;
+    padding-right: 16vw;
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+#top > div:nth-child(2) {
+    position: absolute;
+    top: 30vh;
+    padding-left: 3vw;
+    padding-right: 16vw;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+#middle {
+    position: relative; /* this makes the shadow appear visible */
+    display: flex;
+    flex-direction: column;
+    width: 66.6667vw;
+    height: 26.6668vh;
+    box-shadow: 0px 4px 3px gray;
+}
+
+#middle > div:first-child {
+    padding-top: 2vh;
+    padding-left: 3vw;
+    font-size: 1.4vw;
+    font-weight: 600;
+}
+label {
+    display: block; /* allows the input to appear below the label */
+}
+
+input {
+    display: block;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    width: 40%;
+    height: 3vh;
+    margin-bottom: 1vh;
+    padding-left: 10px;
+    
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1.5vh;
+    padding-bottom: 3vh;
+    padding-left: 3vw;
+}
+
+.enter {
+    width: 50%;
+    font-size: 0.8vw;
+}
+
+
+button {
+    margin-left: 3vw;
+    margin-top: 2.4vh;
+    margin-bottom: 2.4vh;
+    font-size: 1vw;
+    padding: 0.6vw 2.4vw 0.6vw 2.4vw;
+    border-radius: 0.3vw;
+    background-color: #596D48;
+    color: white;
+}
+
+#bottom > div {
+    margin-left: 3vw;
+    font-size: 1vw;
+} 
+#bottom > div > a {
+    color: #596D48;
+    font-weight: 600;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 1px 1px 5px black;
 }
